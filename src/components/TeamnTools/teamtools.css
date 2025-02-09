@@ -1,0 +1,154 @@
+/* General Styling */
+.team-tools-page {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 40px auto;
+  max-width: 850px;
+}
+
+/* Styling for sections */
+.team-tools-page .section {
+  margin-bottom: 40px;
+  background-color: #fff; 
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px dashed #d1d1d1; 
+}
+
+/* Heading style */
+.team-tools-page h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #063c42; 
+  font-family: 'Lucida Console', monospace;
+  text-transform: uppercase;
+}
+
+/* List styling */
+.team-tools-page .ref-list, .team-tools-page .tools-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-tools-page .ref-list li, .team-tools-page .tools-list li {
+  margin: 12px 0;
+  font-size: 1.2rem;
+}
+
+/* Links styling */
+.team-tools-page .ref-list a {
+  text-decoration: none;
+  color: #07eeee; /* Cyan for link color */
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.team-tools-page .ref-list a:hover {
+  color: #05c9c9; /* Slightly darker cyan on hover */
+  transform: scale(1.05);
+}
+
+/* Span inside lists */
+.team-tools-page .ref-list span, .team-tools-page .tools-list span {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Styling for references */
+.team-tools-page .ref-list li span {
+  font-weight: bold;
+  color: #063c42; 
+}
+
+/* Styling for tools list */
+.team-tools-page .tools-list li span {
+  font-style: italic;
+  color: #5d4f4b; 
+}
+
+.team-tools-page .tools-list {
+  margin-left: 25px;
+}
+
+.team-tools-page .tools-list li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Link hover effect */
+.team-tools-page a {
+  border-bottom: 2px dashed #d1d1d1; 
+}
+
+.team-tools-page a:hover {
+  border-bottom: 2px solid #07eeee; 
+}
+
+/* Media Queries for Small Screens */
+@media screen and (max-width: 768px) {
+  .team-tools-page {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .team-tools-page h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .team-tools-page h3 {
+    font-size: 1.5rem;
+  }
+
+  .team-tools-page .section {
+    margin-bottom: 30px;
+    padding: 15px;
+  }
+
+  .team-tools-page .ref-list li, .team-tools-page .tools-list li {
+    font-size: 1rem;
+  }
+
+  .team-tools-page .ref-list a {
+    font-size: 1rem;
+  }
+
+  .team-tools-page .tools-list {
+    margin-left: 15px;
+  }
+}
+
+/* Media Queries for Very Small Screens (Mobile Devices) */
+@media screen and (max-width: 480px) {
+  .team-tools-page {
+    padding: 15px;
+  }
+
+  .team-tools-page h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .team-tools-page h3 {
+    font-size: 1.4rem;
+  }
+
+  .team-tools-page .section {
+    padding: 10px;
+  }
+
+  .team-tools-page .ref-list li, .team-tools-page .tools-list li {
+    font-size: 0.9rem;
+  }
+
+  .team-tools-page .ref-list a {
+    font-size: 0.9rem;
+  }
+
+  .team-tools-page .tools-list {
+    margin-left: 10px;
+  }
+}

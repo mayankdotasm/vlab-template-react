@@ -1,0 +1,285 @@
+/* Container styles for the page */
+.container {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top: 20px; 
+    place-items: center;
+}
+
+/* Styling the heading of the quiz */
+.title {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    color: #4e4e4e;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Button styling */
+.button {
+    
+    font-size: 18px;
+    padding: 15px 25px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e76f51;
+    transform: scale(1.05);
+}
+
+/* Container for question and options */
+.questions {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+/* Styling the question text */
+.questions h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Styling for the answer options */
+.questions button,
+.questions label {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #2a9d8f;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.questions button:hover,
+.questions label:hover {
+    background-color: #264653;
+    transform: scale(1.05);
+}
+
+/* For displaying score and streak info */
+.score, .streak, .points {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+    color: #2a9d8f;
+}
+
+.performance {
+    margin-top: 30px;
+    background-color: #e9c46a;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.performance h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #264653;
+}
+
+.performance p {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+/* For quiz history */
+.history {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f4a261;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for individual history items */
+.historyItem {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.historyItem:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for history headings */
+.historyItem h4 {
+    font-size: 20px;
+    color: #264653;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.history h3 {
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+/* Styling for history details */
+.historyItem p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Correct/Incorrect answer status */
+.historyItem p:nth-of-type(2) {
+    font-weight: bold;
+    color: #e63946; /* Incorrect - red */
+}
+
+.historyItem p:nth-of-type(2):contains("Correct") {
+    color: #2a9d8f; /* Correct - green */
+}
+/* Styling for images in image-based questions */
+.questions img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effects */
+.questions button:hover {
+    background-color: #e76f51;
+}
+
+
+/* General styling for quiz history container */
+ul {
+    padding-left: 20px;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+    /* Container padding adjustments */
+    .container {
+        padding: 20px;
+    }
+
+    /* Title font size */
+    .title {
+        font-size: 28px;
+    }
+
+    /* Button font size */
+    .button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    /* Question text font size */
+    .questions h3 {
+        font-size: 20px;
+    }
+
+    /* Answer button font size */
+    .questions button,
+    .questions label {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    /* Score and streak text font size */
+    .score, .streak, .points {
+        font-size: 16px;
+    }
+
+    /* Performance result font size */
+    .performance h3 {
+        font-size: 20px;
+    }
+
+    .performance p {
+        font-size: 16px;
+    }
+
+    /* History section font size */
+    .history {
+        padding: 15px;
+    }
+
+    .historyItem {
+        padding: 12px;
+    }
+
+    .historyItem h4 {
+        font-size: 18px;
+    }
+
+    .historyItem p {
+        font-size: 14px;
+    }
+
+    /* Image adjustments */
+    .questions img {
+        max-width: 100%;
+    }
+}
+
+/* Small mobile screens */
+@media only screen and (max-width: 480px) {
+    /* Adjusting button size and margins for very small screens */
+    .button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    /* Smaller font size for question text */
+    .questions h3 {
+        font-size: 18px;
+    }
+
+    /* Further reduced font size for history and performance texts */
+    .performance h3, .history h3 {
+        font-size: 18px;
+    }
+
+    .history li {
+        font-size: 12px;
+    }
+
+    /* Make the quiz container full width */
+    .container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    /* Adjusting image scaling for very small screens */
+    .questions img {
+        max-width: 90%;
+    }
+}

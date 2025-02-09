@@ -1,0 +1,16 @@
+.referencesList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .referenceItem {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .referenceItem em {
+    font-style: italic;
+  }
+  
