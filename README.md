@@ -28,7 +28,20 @@ This is a **React-based Virtual Lab (V-Lab) template** built with **Vite** for f
 vlab-template-react/
 ├── public/          # Static assets (logos, icons, etc.)
 ├── src/             # Source code
+│   ├── assets/      # Static files (images, icons, styles)
 │   ├── components/  # Reusable React components
+│   │   ├── common/  # Shared components (e.g., Header, Footer)
+│   │   ├── modules/ # Lab sections
+│   │   │   ├── Aim/
+│   │   │   ├── Applications/
+│   │   │   ├── Code/
+│   │   │   ├── Practice/
+│   │   │   ├── Procedure/
+│   │   │   ├── Quiz/
+│   │   │   ├── References/
+│   │   │   ├── Results/
+│   │   │   ├── TeamnTools/
+│   │   │   ├── Theory/
 │   ├── App.jsx      # Main application component
 │   ├── main.jsx     # Entry point
 │   ├── index.css    # Global styles
@@ -36,6 +49,8 @@ vlab-template-react/
 ├── vite.config.js   # Vite configuration
 └── README.md        # Project documentation
 ```
+
+---
 
 ## ⚙️ Installation & Setup
 
@@ -47,37 +62,22 @@ cd vlab-template-react
 ```
 
 ### 2️⃣ Install Dependencies
-
 ```sh
 npm install
 ```
 
 ### 3️⃣ Run the Development Server
-
 ```sh
 npm run dev
 ```
 
 ### 4️⃣ Build for Production
-
 ```sh
 npm run build
 ```
 
 ### 5️⃣ Preview Production Build
-
 ```sh
 npm run preview
 ```
 
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
-
----
-
-## 🤝 Contributing
-
-Feel free to open issues and submit pull requests to improve this template!
