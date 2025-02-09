@@ -5,16 +5,16 @@ import {
   NavLink,
 } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header/Header";
-import Aim from "./components/Aim/Aim";
-import Theory from "./components/Theory/Theory";
-import Procedure from "./components/Procedure/Procedure";
-import Practice from "./components/Practice/Practice";
-import Code from "./components/Code/Code";
-import Application from "./components/Applications/Application";
-import Quiz from "./components/Quiz/Quiz";
-import References from "./components/References/References";
-import TeamTools from "./components/TeamnTools/TeamTools";
+import Header from "./components/common/Header/Header";
+import Aim from "./components/modules/Aim/Aim";
+import Theory from "./components/modules/Theory/Theory";
+import Procedure from "./components/modules/Procedure/Procedure";
+import Practice from "./components/modules/Practice/Practice";
+import Code from "./components/modules/Code/Code";
+import Application from "./components/modules/Applications/Application";
+import Quiz from "./components/modules/Quiz/Quiz";
+import References from "./components/modules/References/References";
+import TeamTools from "./components/modules/TeamnTools/TeamTools";
 
 
 const pages = [
